@@ -56,7 +56,9 @@ jobs:
             lock_when_sleeps:false
 
       - name: Install yarn dependencies
-        run: yarn install
+        run: |
+          rm -rf yarn.lock
+          yarn install
 
       - name: Run pod install
         working-directory: ios
