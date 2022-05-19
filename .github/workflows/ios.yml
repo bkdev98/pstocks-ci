@@ -17,6 +17,7 @@ jobs:
       KEYCHAIN_NAME: ${{ secrets.KEYCHAIN_NAME }}
       KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
       MATCH_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+      APP_STORE_CERTIFICATE_PASSWORD: ${{ secrets.APP_STORE_CERTIFICATE_PASSWORD }}
       REPO_REF: ${{ github.event.inputs.repo_ref || 'main' }}
       APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
       APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
